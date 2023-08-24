@@ -1,0 +1,16 @@
+
+
+#animation {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 99.1%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+    #animation {
+        display: none;
+        opacity: 0;
+    }
+}

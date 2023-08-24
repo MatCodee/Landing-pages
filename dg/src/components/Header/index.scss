@@ -1,0 +1,116 @@
+.container-header{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    .toggle-nav {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* Toggle elemennt */
+    .container-toggle-show {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: none;
+        .toggle-nav {
+            .icon-header-toggle-element {
+                color: black;
+                font-size: 3rem;
+                cursor: pointer;
+            }
+        }
+        .toggle-show {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            ul {
+                height: 200px;
+                z-index: 100;
+                li {
+                    list-style: none;
+                    margin-bottom: 10px;
+                    a {
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        display: block;
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .container-toggle-show.active {
+        display: initial;
+    }
+
+
+    .manu-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            font-size: 2.2rem;
+            color: white;
+            font-weight: 700;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            z-index: 3;
+            li {
+                font-weight: 700;
+                font-size: 18px;
+                cursor: pointer;
+                z-index: 100;
+                list-style: none;
+                margin-right: 10px;
+                color: rgb(186, 186, 186);
+                padding: 10px 30px;
+                border-radius: 10px;
+                transition: background-color 1s ease,color 1s ease;
+                
+                &:hover {
+                    background-color: rgb(62, 9, 105);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .container-header {
+        height: 30px;
+        .manu-navbar {
+            display: none;
+            visibility: hidden;
+        }
+        .toggle-nav {
+            padding: 20px;
+            display: inline-block;
+            opacity: 1;
+            visibility: visible;
+            display: flex;
+            justify-content: space-between;
+            code {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: white;
+            }
+            .icon-header-toggle {
+                font-size: 3rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

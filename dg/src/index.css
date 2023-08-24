@@ -1,0 +1,10 @@
+.container {
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+body {
+    background-color: #110125;
+    width: 100%;
+}
